@@ -1,0 +1,21 @@
+﻿<?xml version="1.0"?>
+<package>
+	<metadata>
+		<id>Opten.Umbraco.ListViewPreviewLayout</id>
+		<version></version>
+		<title>Opten.Umbraco.ListViewPreviewLayout</title>
+		<authors>OPTEN AG</authors>
+		<owners>OPTEN AG</owners>
+		<projectUrl>https://bitbucket.org/opten/opten-solutions</projectUrl>
+		<description><![CDATA[A preview layout for the Umbraco list view  ]]></description>
+		<iconUrl>http://www.opten.ch/nuget/logo.png</iconUrl>
+		<requireLicenseAcceptance>false</requireLicenseAcceptance>
+		<releaseNotes></releaseNotes>
+		<tags>opten</tags>
+		<dependencies></dependencies>
+	</metadata>
+	<files>
+		<file src="src\Opten.Umbraco.ListViewPreviewLayout\bin\Release\Opten.Umbraco.ListViewPreviewLayout.dll" target="lib\net45" />
+		<file src="src\Opten.Umbraco.ListViewPreviewLayout.Web.UI\App_Plugins\OPTEN.ListViewPreviewLayout\**\*.*" target="content\App_Plugins\OPTEN.ListViewPreviewLayout" />
+	</files>
+</package>

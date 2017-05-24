@@ -1,0 +1,13 @@
+﻿<div ng-controller="OPTEN.ListViewPreviewLayout" ng-if="items" class="umb-grid">
+	<div class="umb-cell-content -has-editors -collapsed">
+		<div class="umb-control" ng-repeat="item in items">
+			<div class="umb-control-click-overlay"></div>
+			<div class="umb-control-inner">
+				<div style="height:40px;" ng-if="!item.preview">
+					<umb-load-indicator></umb-load-indicator>
+				</div>
+				<div ng-if="item.preview" ng-bind-html-unsafe="item.preview" class="opten-listviewpreviewlayout"></div>
+			</div>
+		</div>
+	</div>
+</div>
