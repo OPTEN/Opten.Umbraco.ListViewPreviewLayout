@@ -35,7 +35,7 @@ Task("Version")
 		CreateDirectory(dest);
 	}
 
-	version = "0.0.1";
+	version = "0.0.2";
 
 	PatchAssemblyInfo("../src/Opten.Umbraco.ListViewPreviewLayout/Properties/AssemblyInfo.cs", version);
 
