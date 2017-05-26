@@ -27,6 +27,7 @@ namespace Opten.Umbraco.ListViewPreviewLayout.Controllers
 			var renderModel = new RenderModel(typedModel, System.Threading.Thread.CurrentThread.CurrentUICulture);
 
 			RouteData.DataTokens["umbraco"] = renderModel;
+			RouteData.DataTokens["area"] = "";
 			ViewData.Model = renderModel;
 
 			if (templateId > 0)
