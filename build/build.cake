@@ -35,7 +35,7 @@ Task("Version")
 		CreateDirectory(dest);
 	}
 
-	version = "0.0.2";
+	version = GitDescribe("../", false, GitDescribeStrategy.Tags, 0);
 
 	PatchAssemblyInfo("../src/Opten.Umbraco.ListViewPreviewLayout/Properties/AssemblyInfo.cs", version);
 

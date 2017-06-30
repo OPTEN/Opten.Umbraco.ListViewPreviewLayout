@@ -3,9 +3,7 @@
 
 	function ListViewPreviewLayout($scope, listViewHelper, $location, $http) {
 
-		var vm = this;
-
-		vm.clickItem = clickItem;
+		$scope.clickItem = clickItem;
 
 		function activate() {
 			for (var i = 0; i < $scope.items.length; i++) {
