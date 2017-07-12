@@ -16,7 +16,7 @@ namespace Opten.Umbraco.ListViewPreviewLayout.Models
 	{
 		public static IPublishedContent ToPublishedContent(this IContent content, bool isPreview = false)
 		{
-			return new FakePublishedContent(content, isPreview);
+			return PublishedContentModelFactoryResolver.Current.Factory.CreateModel(new FakePublishedContent(content, isPreview));
 		}
 	}
 
