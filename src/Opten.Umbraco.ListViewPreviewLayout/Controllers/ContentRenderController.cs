@@ -80,10 +80,9 @@ namespace Opten.Umbraco.ListViewPreviewLayout.Controllers
 			}
 			catch (Exception e)
 			{
-				LogHelper.Error<ContentRenderController>("Can't render preview for content with id: " + id);
+				LogHelper.Error<ContentRenderController>("Can't render preview for content with id: " + id, e);
 				return Content("Error rendering preview for content!");
 			}
-		}
 		}
 	}
 }
